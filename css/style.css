@@ -1,0 +1,81 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    background-color: black;
+    color: whitesmoke;
+    max-width: 56rem;
+    margin: 0 auto;
+}
+
+.title {
+    margin-bottom: 10rem;
+    letter-spacing: 2px;
+    animation: leftRight 1s ease-in-out 1s;
+    animation-fill-mode: backwards;
+}
+
+.title span {
+    font-weight: 300;
+}
+
+.conteiner-2 {
+    animation: bottonUp 1s ease-in-out;
+}
+
+.conteiner-2 img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    opacity: .15;
+}
+
+.conteiner-2 img:hover {
+    opacity: .2;
+}
+
+.song-audio {
+    margin-top: 6rem;
+    text-align: center;
+}
+
+.song-play {
+    animation: bottonUp 1s ease-in-out;
+    outline: none;
+}
+
+@keyframes leftRight {
+    0% {
+        opacity: 0;
+        transform: translateX(-1.5rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes bottonUp {
+    0% {
+        opacity: 0;
+        transform: translateY(1.5rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
